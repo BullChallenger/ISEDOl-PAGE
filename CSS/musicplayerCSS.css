@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&family=Kaushan+Script&display=swap');
+
+body {background-color: black;}
+
+.musicplayer{
+    width: 100%;
+    top:100px;
+    height: 520px;
+}
+
+.lpcover {
+    display:block;
+    margin:auto;
+    position:relative;
+    bottom:549px
+}
+
+.lp {
+    display:block;
+    margin:auto;    
+}
+
+.cd {
+    display:block;
+    margin:auto;
+    width: 80%;
+    height: 600px;
+}
+
+.blank {
+    height: 0px;
+}
+
+.cd:hover .lp{transform: translateX(180px) rotate(360deg); transition: all 0.8s ease all 1s ease}
+.cd:hover .lpcover{transform: translateX(-180px); transition: all 0.8s ease}
+
+.lp{transform: translateX(0); transition: all 0.8s ease}
+.lpcover{transform: translateX(0px); transition: all 0.8s ease}
+
+.option {
+    width: 100%; height: auto;
+    top:100px;
+    opacity: 0;
+    left:300px;
+}
+
+.musictitle{
+    display:block;
+    margin: auto;
+    width: 70%; height: auto;
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Kaushan Script', sans-serif;
+    color: white;
+}
+
+.artist{
+    display:block;
+    margin: auto;
+    width: 70%; height: auto;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Jua', sans-serif;
+    color: #00ba9f;
+}
+
+.date{
+    display:block;
+    margin: auto;
+    width: 70%; height: auto;
+    position: relative;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Kaushan Script', serif;
+    color: white;
+}
+
+.section1 { 
+    top: 1000px;
+    height: 100%; position: relative; overflow: hidden; 
+}
+
+.section {
+    background: black; width: 1000px; height: 1000px;
+}

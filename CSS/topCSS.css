@@ -1,0 +1,25 @@
+.top {
+    position: relative;    
+    margin-bottom: 10px;
+}
+
+.wak_logo {
+    display:block;
+    margin:auto;
+}
+
+.logo {
+    position: relative;
+    top:5px;
+}
+
+.btn {
+    position: relative;
+    bottom:8px;
+    left:10px;
+}
+
+.menu_btn {
+    position:relative;
+    bottom:35px;
+}
