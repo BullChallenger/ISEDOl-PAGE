@@ -1,0 +1,122 @@
+.selector {
+  position: relative;
+  top: 50px;
+}
+
+.selectorList {
+    width: 250px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+}
+
+
+.playAlbum{
+    position: relative; 
+    margin: auto;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.listButton {
+  position: relative;
+  top: 40px;
+}
+
+.playList button, .playList button:active, .playList button:focus{
+  position: relative;
+  bottom: 290px;
+  width: 75px; 
+  height: 250px;
+  border: 0;
+  outline: 0;
+  background-color: black;
+}
+
+.playList button:hover {
+background-color: rgb(26, 26, 26);
+}
+
+.Listprev{
+position: relative;
+cursor: pointer;
+float: left;
+right: 450px;
+}
+
+.Listnext{
+position: relative;
+cursor: pointer;
+float: right;
+left: 450px;
+}
+
+.아이네 {
+  position: relative;
+  top: 40px;
+}
+
+.ineIcon {
+  position: absolute;
+  border-width : 5px; 
+  border-style : solid; 
+  border-color : white;
+  border-radius: 10px;
+  right: 200px;
+}
+
+.IneAlbum {
+  position: absolute; 
+  margin: auto;
+  width: 250px;
+  height: 250px;
+  overflow: hidden;
+}
+
+.IneButton {
+  position: relative;
+  top: 40px;
+}
+
+.아이네 button, .아이네 button:active, .아이네 button:focus{
+  position: relative;
+  width: 75px; 
+  height: 250px;
+  border: 0;
+  outline: 0;
+  background-color: black;
+}
+
+.아이네 button:hover {
+  background-color: rgb(26, 26, 26);
+}
+
+.InePrev{
+  position: relative;
+  cursor: pointer;
+  float: left;
+  right: 525px;
+  bottom: 40px;
+}
+
+.IneNext{
+  position: relative;
+  cursor: pointer;
+  float: right;
+  left: 450px;
+  bottom: 290px;
+}
+
+.albumImages{
+    position: relative;
+    display: flex;
+    height: 250px;
+ }
+
+.albumImages img{
+    width: 250px;
+    height: 250px;
+    margin-right: 40px;
+}
+

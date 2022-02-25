@@ -6,30 +6,48 @@ body {background-color: black;}
 .musicplayer{
     width: 100%;
     top:100px;
-    height: 520px;
+    height: 100%;
+    z-index: 1;    
+}
+
+.player {
+    position:absolute;
+}
+
+#video {
+    position: relative;
+    margin: 0, auto;
+    text-align: center;
+    left: 228px;
+    opacity: 0.3;
+}
+
+.cd {
+    position: relative;
+    top: 50px;
+    margin:0 auto;
+    width: 400px;
+    height: 400px;
+    cursor: pointer;
 }
 
 .lpcover {
     display:block;
-    margin:auto;
-    position:relative;
-    bottom:549px
+    margin:0 auto;
+    position: absolute;
+    top: 120px;
+    left: 30px;
+    width: 350px;
+    height: 350px;
 }
 
 .lp {
     display:block;
-    margin:auto;    
-}
-
-.cd {
-    display:block;
-    margin:auto;
-    width: 80%;
-    height: 600px;
-}
-
-.blank {
-    height: 0px;
+    margin:0 auto;  
+    position: absolute;
+    top: 100px;
+    width: 400px;
+    height: 400px;
 }
 
 .cd:hover .lp{transform: translateX(180px) rotate(360deg); transition: all 0.8s ease all 1s ease}
@@ -39,10 +57,10 @@ body {background-color: black;}
 .lpcover{transform: translateX(0px); transition: all 0.8s ease}
 
 .option {
-    width: 100%; height: auto;
-    top:100px;
-    opacity: 0;
-    left:300px;
+    position: relative;
+    top: 270px;
+    width: 100%; 
+    height: 300px;
 }
 
 .musictitle{
@@ -78,11 +96,3 @@ body {background-color: black;}
     color: white;
 }
 
-.section1 { 
-    top: 1000px;
-    height: 100%; position: relative; overflow: hidden; 
-}
-
-.section {
-    background: black; width: 1000px; height: 1000px;
-}

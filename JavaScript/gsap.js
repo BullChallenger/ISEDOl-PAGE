@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger);
+/*gsap.registerPlugin(ScrollTrigger);
 
 gsap.to(".option", {
   opacity:1 ,
@@ -9,3 +9,5 @@ gsap.to(".option", {
     scrub: 2,
   }
   });
+
+  gsap.fromTo(".")*/
