@@ -1,13 +1,20 @@
-/*gsap.registerPlugin(ScrollTrigger);
+function gone() {
+  gsap.to(".lpcover", {
+  duration: 0.1,
+  ease: 0.1,
+  opacity: 0,
+})
+}
 
-gsap.to(".option", {
-  opacity:1 ,
-  scrollTrigger: {
-    trigger: ".option",
-    start: "top 90%",
-    end: "bottom top-=200",
-    scrub: 2,
-  }
-  });
+function back() {
+  gsap.fromTo(".lpcover", {
+    opacity: 0,
+  }, {
+    duration: 0.1,
+    ease: 0.1,
+    opacity: 1,
+  })
+}
 
-  gsap.fromTo(".")*/
+
+let lpRotate = gsap.to(".lp", {rotate: 360, duration: 240, delay: 0.5})

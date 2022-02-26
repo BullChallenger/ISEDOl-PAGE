@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/topCSS.css">
     <link rel="stylesheet" href="css/navigationCSS.css">
     <link rel="stylesheet" href="css/selectorCSS.css">
+    <link rel="stylesheet" href="css/footer.css">
 
     <script src="https://kit.fontawesome.com/d438e9c5c3.js" crossorigin="anonymous"></script>
 
@@ -27,53 +28,56 @@
    <![endif]-->
 </head>
 <body>
-    <!--사이드바 구현-->
-    <div class="navigation">
-        <ul>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-solid fa-house"></i></span>
-                    <span class="title">Home</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-solid fa-music"></i></span>
-                    <span class="title">이세계 아이돌</span>
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <span class="icon"><i class="fa fa-brands fa-youtube"></i></span>
-                    <span class="title">VRC 상황극</span>
-                </a>
-            </li>
-        </ul>
-    </div>
-    <div class="toggle" onclick="toggleMenu()"></div>
-    <script type="text/Javascript">
-        function  toggleMenu() {
-            let navigation = document.querySelector('.navigation');
-            let toggle = document.querySelector('.toggle');
-            navigation.classList.toggle('active');
-            toggle.classList.toggle('active');
-        }   
-    </script>
-    
-    <!--로고 및 버튼-->
-    <div class="banner">
-        <img class="logo" src="Images/wakLogo_2.png" width="80" height="65">
-    </div>
-    <div class="space">
+<div id="bodyContainer">
+    <section>
+        <!--사이드바 구현-->
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-solid fa-house"></i></span>
+                        <span class="title">Home</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-solid fa-music"></i></span>
+                        <span class="title">이세계 아이돌</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa fa-brands fa-youtube"></i></span>
+                        <span class="title">VRC 상황극</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="toggle" onclick="toggleMenu()"></div>
+        <script type="text/Javascript">
+            function  toggleMenu() {
+                let navigation = document.querySelector('.navigation');
+                let toggle = document.querySelector('.toggle');
+                navigation.classList.toggle('active');
+                toggle.classList.toggle('active');
+            }   
+        </script>
+        
+        <!--로고 및 버튼-->
+        <div class="banner">
+            <img class="logo" src="Images/wakLogo_2.png" width="80" height="65">
+        </div>
+        <div class="space">
 
-    </div>
+        </div>
 
-    <!--음악 재생 및 설명-->
-    <div class="musicplayer">
-        <div class="front">
-            <div class = "player">
-                <iframe id="video" width="1080" height="680" src="https://www.youtube.com/embed/jelNkU4mPuA?controls=0&rel=1&enablejsapi=1" title="YouTube video player" frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+        <!--음악 재생 및 설명-->
+        <div class="musicplayer">
+            <div class = "musicVideo">
+                <div class="videoWrapper">
+                    <iframe id="video" width="1080" height="680" src="https://www.youtube.com/embed/jelNkU4mPuA?showinfo=0&controls=0&enablejsapi=1" title="YouTube video player" frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;" allowfullscreen></iframe>
+                </div>
             </div>
             <div class="cd">
                 <div><img class="lp" src="Images/Rewindlp.png"></div>
@@ -85,68 +89,75 @@
                 <span class="date">2021-12-17</span>
             </div>
         </div>
-    </div>
 
-    <!--아이돌 곡 선택창-->
-    <div class="selector">
-        <ul class="selectorList">
-            <li>
-                <a class="playList">
-                    <div class="playAlbum">
-                        <div class="albumImages">
-                            <img src="Images/RewindlpCover.png">
-                            <img src="Images/팬서비스.png">
-                            <img src="Images/ButterFlylpCover.png">
+        <!--아이돌 곡 선택창-->
+        <div class="selector">
+            <ul class="selectorList">
+                <li>
+                    <a class="playList">
+                        <div class="playAlbum">
+                            <div class="albumImages">
+                                <img src="Images/RewindlpCover.png">
+                                <img src="Images/팬서비스.png">
+                                <img src="Images/ButterFlylpCover.png">
+                                <img src="Images/fallInLoveLpCover.png">
+                                <img src="Images/GodKnowsLpCover.png">
+                            </div>
                         </div>
-                    </div>
-                    <div class="listButton">
-                        <button class="Listprev"><i class="fa-solid fa-chevron-left" style="color : white"></i></button> 
-                        <button class="Listnext"><i class="fa-solid fa-chevron-right" style="color : white"></i></button>
-                    </div>
-                </a>
-            </li>
-            <li>
-                <a class="아이네">
-                
-                </a>
-            </li>
-            <li>
-                <a class="징버거">
+                        <div class="listButton">
+                            <button class="Listprev"><i class="fa-solid fa-chevron-left" style="color : white"></i></button> 
+                            <button class="Listnext"><i class="fa-solid fa-chevron-right" style="color : white"></i></button>
+                        </div>
+                    </a>
+                </li>
+                <!--
+                <li>
+                    <a class="아이네">
                     
-                </a>
-            </li>
-            <li>
-                <a class="릴파">
-                    
-                </a>
-            </li>
-            <li>
-                <a class="주르르">
-                    
-                </a>
-            </li>
-            <li>
-                <a class="고세구">  
-                    
-                </a>
-            </li>
-            <li>
-                <a class="비챤">
-                    
-                </a>
-            </li>
-        </ul>
-      
-    </div>
+                    </a>
+                </li>
+                <li>
+                    <a class="징버거">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="릴파">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="주르르">
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="고세구">  
+                        
+                    </a>
+                </li>
+                <li>
+                    <a class="비챤">
+                        
+                    </a>
+                </li>
+                -->
+            </ul>
+        </div>
 
-    <script src="JavaScript/Track.js"></script>
-    <script src="JavaScript/youtube.js"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>-->
-    <script src="JavaScript/gsap.js"></script>
-  
-
+        <script src="JavaScript/Track.js"></script>
+        <script src="JavaScript/youtube.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+        <script src="JavaScript/gsap.js"></script>
+    </section>
+<!--    <footer>
+        <div class="bottomBox">
+            <nav class="wakZoo">
+                <a href=""><img src=""></a>
+            </nav>
+        </div>
+    </footer>-->
+</div>
 </body>
-
-
 </html>

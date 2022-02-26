@@ -10,6 +10,9 @@
     top: 100px;
 }
 
+.playList {
+  position: relative;
+}
 
 .playAlbum{
     position: relative; 

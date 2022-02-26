@@ -10,7 +10,7 @@ body {background-color: black;}
     z-index: 1;    
 }
 
-.player {
+.musicVideo {
     position:absolute;
 }
 
@@ -50,10 +50,10 @@ body {background-color: black;}
     height: 400px;
 }
 
-.cd:hover .lp{transform: translateX(180px) rotate(360deg); transition: all 0.8s ease all 1s ease}
-.cd:hover .lpcover{transform: translateX(-180px); transition: all 0.8s ease}
+/*.cd:hover .lp{transform: translateX(80px) rotate(360deg); transition: all 0.8s ease all 1s ease}*/
+.cd:hover .lpcover{transform: translateX(-200px); transition: all 0.8s ease}
 
-.lp{transform: translateX(0); transition: all 0.8s ease}
+/*.lp{transform: translateX(0); transition: all 0.8s ease}*/
 .lpcover{transform: translateX(0px); transition: all 0.8s ease}
 
 .option {
