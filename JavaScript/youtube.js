@@ -19,7 +19,6 @@ function onYouTubeIframeAPIReady() {
 // 4. The API will call this function when the video player is ready.
 function onPlayerReady(event) {
   event.target.playVideo();
-  onPlayerStateChange()
 }
 
 // 5. The API calls this function when the player's state changes.
@@ -31,33 +30,42 @@ function onPlayerStateChange(event) { // 곡 재생 완료 -> 다음 곡으로 �
   }
 
   switch (event.data) {
-    case YT.PlayerState.UNSTARTED : // 시작 전
-      cdButton.addEventListener("click", play)
+    case YT.PlayerState.UNSTARTED : {// 시작 전
+      cdButton.addEventListener("click", playMusic, true)  
+      cdButton.removeEventListener("click", pauseMusic, true)
       lpRotate.pause();
-      break;
-    case YT.PlayerState.PLAYING :  // 재생 중
-      cdButton.removeEventListener("click", play)
-      cdButton.addEventListener("click", pause)
-      lpRotate.play();
-      gone();
-      break;
-    case YT.PlayerState.PAUSED :  // 일시정지
-      cdButton.removeEventListener("click", pause)
-      cdButton.addEventListener("click", play)
-      lpRotate.pause();
-      back();
+      console.log("시작 전")
       break;
     }
-  }
+    case YT.PlayerState.PLAYING : { // 재생 중
+      cdButton.removeEventListener("click", playMusic, true)
+      cdButton.addEventListener("click", pauseMusic, true)
+      lpRotate.play();
+      gone();
+      console.log("재생 중")
+      break;
+    }
+    case YT.PlayerState.PAUSED : { // 일시정지
+      cdButton.removeEventListener("click", pauseMusic, true)
+      cdButton.addEventListener("click", playMusic, true)
+      lpRotate.pause();
+      back();
+      console.log("일시정지")
+      break;
+    }
+  }  
+}
 
-function play() {
+function playMusic() {
   if (player.playVideo) {
+    console.log("play정상작동")
     player.playVideo();
   }
 }
 
-function pause() {
+function pauseMusic() {
   if (player.pauseVideo) {
+    console.log("pause정상작동")
     player.pauseVideo();
   }
 }
